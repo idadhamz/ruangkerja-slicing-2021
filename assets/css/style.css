@@ -1,0 +1,927 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+
+/* ==== ROOT ==== */
+:root {
+    --text-heading: #121212;
+    --text-body: #404852;
+    --text-brand: #1EA59A;
+    --text-white: #F7F8F7;
+
+    --background: #FBFFF9;
+    --background-button: #FE753E;
+    --background-quote: #5959B3;
+    --background-testi: #F6F6FB;
+
+    /* Font and Typography */
+    --body-font: 'Mulish', sans-serif;
+    --biggest-font-size: 5rem;  /*80px*/
+    --banner-font-size: 3.438rem; /*55px*/
+    --title-font-size: 1.875rem; /*30px*/
+    --title-why-font-size: 1.25rem; /*20px*/
+    --name-font-size: 1.125rem; /*18px*/
+    --body-font-size: 0.938rem; /*15px*/
+    --desc-font-size: 0.813rem; /*13px*/
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-heading);
+}
+
+a:hover {
+    color: var(--text-brand);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* ==== HEADER ==== */
+header {
+    padding: 2rem 0px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+header nav .item-nav {
+    width: 100%;
+}
+
+header nav .item-nav ul {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 20px;
+}
+
+header nav .item-nav ul .left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header nav .item-nav ul .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .item-nav ul div li {
+    margin: 0 10px;
+
+    font-size: var(--body-font-size);
+    font-weight: 700;
+}
+
+/* ==== BANNER ==== */
+
+#banner article {
+    padding: 2rem 0px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#banner article .div-search {
+    position: absolute;
+    top: 50%;
+    left: 10rem;
+    z-index: 1;
+}
+
+#banner article .div-search h1 {
+    font-weight: bold;
+    font-size: var(--banner-font-size);
+}
+
+#banner article .div-search .search-banner {
+    margin: 2rem 0;
+    padding: 1rem;
+    
+    background-color: var(--background);
+    border-radius: 5px;
+
+    box-shadow: 0px 20px 30px 0px rgba(64,72,82,0.1);
+}
+
+#banner article .div-search .search-banner .select {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    padding: 1rem;
+}
+
+#banner article .div-search .search-banner .select .input-select {
+    flex: 1;
+}
+
+#banner article .div-search .search-banner .select .input-select p {
+    color: var(--text-body);
+    font-size: var(--desc-font-size);
+}
+
+select {
+    width: auto;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 1rem 0;
+
+    color: var(--text-body);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+select option {
+    font-size: medium;
+}
+
+#banner article .div-search .search-banner .select .btn-select button {
+    border: none;
+    padding: 1.15rem 2rem;
+    background-color: var(--background-button);
+    color: white;
+    font-size: var(--body-font-size);
+
+    border-radius: 5px;
+}
+
+#banner article .img-banner {
+    max-width: 827px;
+
+    margin-left: auto;
+    order: 2;
+}
+
+/* ==== PILIH RUANG KERJA ==== */
+
+#pilih-ruang-kerja article {
+    padding: 2rem 0;
+}
+
+#pilih-ruang-kerja article .title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#pilih-ruang-kerja article .title .title-pilih {
+    display: flex;
+    flex: 1;
+}
+
+#pilih-ruang-kerja article .title .title-pilih h1 {
+    font-weight: bold;
+    font-size: var(--title-font-size);
+    width: 50%;
+    line-height: 2.5rem;
+}
+
+#pilih-ruang-kerja article .title .desc-pilih {
+    display: flex;
+    flex: 1;
+}
+
+#pilih-ruang-kerja article .title .desc-pilih p {
+    line-height: 2rem;
+}
+
+#pilih-ruang-kerja article .title .desc-pilih p a {
+    color: var(--text-brand);
+}
+
+#pilih-ruang-kerja article .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 2rem 0;
+}
+
+#pilih-ruang-kerja article .content img {
+    max-width: 33%;
+    padding: 2rem 0;
+    
+    border-radius: 10px;
+}
+
+/* ==== WHY RUANG KERJA ==== */
+
+#why-ruang-kerja .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 2rem 0;
+}
+
+#why-ruang-kerja .content article {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#why-ruang-kerja .content article h1 {
+    font-size: var(--title-font-size);
+    color: var(--text-heading);
+}
+
+#why-ruang-kerja .content article p.desc-why {
+    font-size: var(--body-font-size);
+    color: var(--text-body);
+    line-height: 2rem;
+    padding: 1rem 0;
+
+    max-width: 40%;
+}
+
+#why-ruang-kerja .content article div {
+    margin: 1.5rem 0;
+}
+
+#why-ruang-kerja .content article div h1 {
+    font-size: var(--biggest-font-size);
+    color: var(--text-brand);
+    font-weight: bold;
+}
+
+#why-ruang-kerja .content article div p {
+    font-size: var(--body-font-size);
+    color: var(--text-body);
+
+    line-height: 0;
+}
+
+#why-ruang-kerja .content aside {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    margin: auto 0;
+}
+
+#why-ruang-kerja .content aside div {
+    display: flex;
+
+    margin: 2.5rem 0;
+    padding: 0 3rem;
+}
+
+#why-ruang-kerja .content aside div img {
+    width: 50px;
+    height: auto;
+}
+
+#why-ruang-kerja .content aside div div {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto 1rem;
+}
+
+#why-ruang-kerja .content aside div div h1 {
+    font-size: var(--title-why-font-size);
+    color: var(--text-heading);
+}
+
+#why-ruang-kerja .content aside div div p {
+    font-size: var(--body-font-size);
+    color: var(--text-body);
+
+    width: 80%;
+}
+
+/* ==== SEKITARMU RUANG KERJA ==== */
+
+#sekitarmu-ruang-kerja article {
+    padding: 2rem 0;
+}
+
+#sekitarmu-ruang-kerja article .title h1 {
+    font-size: var(--title-font-size);
+    color: var(--text-heading);
+}
+
+#sekitarmu-ruang-kerja article .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 4rem 0;
+}
+
+#sekitarmu-ruang-kerja article .content .ruang-kerja {
+    padding-top: 1rem;
+}
+
+#sekitarmu-ruang-kerja article .content .ruang-kerja div {
+    padding: 1rem 0;
+}
+
+#sekitarmu-ruang-kerja article .content .ruang-kerja div h1 {
+    font-size: var(--name-font-size);
+    color: var(--text-brand);
+    font-weight: bold;
+}
+
+#sekitarmu-ruang-kerja article .content .ruang-kerja div .address {
+    font-size: var(--desc-font-size);
+    color: var(--text-body);
+
+    padding: 0.5rem 0;
+}
+
+#sekitarmu-ruang-kerja article .content .ruang-kerja div .price {
+    font-size: var(--body-font-size);
+    color: var(--text-heading);
+    font-weight: bold;
+}
+
+#sekitarmu-ruang-kerja article .content .ruang-kerja div .price span {
+    font-size: var(--desc-font-size);
+    color: var(--text-heading);
+}
+
+/* ==== TESTI RUANG KERJA ==== */
+
+#testi-ruang-kerja {
+    background-color: var(--background-testi);
+}
+
+#testi-ruang-kerja .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 4rem 0;
+}
+
+#testi-ruang-kerja .content article {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    margin: auto 0;
+}
+
+#testi-ruang-kerja .content article img {
+    width: 60px;
+    height: auto;
+}
+
+#testi-ruang-kerja .content article h1 {
+    font-size: var(--title-font-size);
+    color: var(--text-heading);
+
+    margin: 2rem 0;
+}
+
+#testi-ruang-kerja .content aside {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    margin: auto 0;
+}
+
+#testi-ruang-kerja .content aside .title, #testi-ruang-kerja .content aside .testi {
+    text-align: center;
+
+    margin: 1rem 10rem;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#testi-ruang-kerja .content aside .title h1 {
+    font-size: var(--title-font-size);
+    color: var(--text-heading);
+    font-weight: normal;
+
+    line-height: 35px;
+}
+
+#testi-ruang-kerja .content aside .title p {
+    font-size: var(--body-font-size);
+    color: var(--text-body);
+
+    line-height: 20px;
+    margin: 2rem 0;
+}
+
+#testi-ruang-kerja .content aside .testi img {
+    width: 50px;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+#testi-ruang-kerja .content aside .testi .person {
+    margin: 1rem 0;
+}
+
+#testi-ruang-kerja .content aside .testi .person h1 {
+    font-size: var(--body-font-size);
+    color: var(--text-heading);
+    font-weight: bold;
+}
+
+#testi-ruang-kerja .content aside .testi .person p {
+    font-size: var(--desc-font-size);
+    color: var(--text-body);
+
+    margin: 3px 0;
+}
+
+/* ==== SEKITARMU RUANG KERJA ==== */
+
+.biodata aside {
+    padding: 4rem 0;
+}
+
+.biodata aside .title h1 {
+    font-size: var(--title-font-size);
+    color: var(--text-heading);
+}
+
+.biodata aside .content {
+    padding: 2rem 0;
+}
+
+.biodata aside .content .main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.biodata aside .content .main-content img {
+    width: 300px;
+    height: auto;
+
+    border-radius: 30px;
+}
+
+.biodata aside .content .main-content .content-text {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto 5rem;
+}
+
+.biodata aside .content .main-content .content-text .content-role {
+    display: flex;
+    flex-direction: row;
+}
+
+.biodata aside .content .main-content .content-text .content-role .role {
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.biodata aside .content .main-content .content-text .content-role .role.coding {
+    border: 1px solid blue;
+    color: blue;
+}
+
+.biodata aside .content .main-content .content-text .content-role .role.ui-ux {
+    border: 1px solid var(--text-brand);
+    color: var(--text-brand);
+}
+
+.biodata aside .content .main-content .content-text .content-role .role h1 {
+    font-size: var(--body-font-size);
+}
+
+.biodata aside .content .main-content .content-text .content-intro {
+    padding: 1rem 0;
+}
+
+.biodata aside .content .main-content .content-text .content-intro p {
+    font-size: var(--name-font-size);
+    line-height: 20px;
+}
+
+.biodata aside .content .main-content .content-text .add-content {
+    margin: auto 0;
+
+    display: flex;
+}
+
+.biodata aside .content .main-content .content-text .add-content div {
+    margin: 2rem 2rem 0rem 0rem;
+    
+    padding: 2rem;
+    border: 1.5px solid var(--text-brand);
+    color: var(--text-body);
+    border-radius: 10px;
+
+    flex: 1;
+    flex-basis: 50%;
+}
+
+.biodata aside .content .main-content .content-text .add-content div h1 {
+    font-size: var(--title-why-font-size);
+}
+
+.biodata aside .content .main-content .content-text .add-content div p {
+    font-size: var(--name-font-size);
+
+    margin: 1rem 0;
+}
+
+/* ==== FOOTER ==== */
+
+footer {
+    padding: 6rem 0;
+    background-color: var(--background-testi);
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+footer .content .info img {
+    max-width: 70px;
+}
+
+footer .content .info p {
+    margin: 2rem 0;
+
+    font-size: var(--name-font-size);
+    color: var(--text-heading);
+}
+
+footer .content .ruang-kerja h1, footer .content .about h1, footer .content .subscribe-us h1 {
+    font-size: var(--title-why-font-size);
+    color: var(--text-heading);
+}
+
+footer .content .ruang-kerja ul, footer .content .about ul {
+    margin: 2rem 0;
+}
+
+footer .content .ruang-kerja ul li, footer .content .about ul li {
+    margin: 1rem 0;
+}
+
+footer .content .subscribe-us .input {
+    margin: 2rem 0;
+}
+
+footer .content .subscribe-us .input input {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    
+    width: auto;
+}
+
+footer .content .subscribe-us .input input:focus {
+    outline: none;
+}
+
+footer .content .subscribe-us .input button {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background: var(--text-brand);
+    color: var(--text-white);
+    
+    width: auto;
+}
+
+footer .content .subscribe-us .media-social img {
+    width: 25px;
+    height: auto;
+
+    margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    header nav .item-nav {
+        display: none;
+    }
+
+    /* ==== BANNER ==== */
+
+    #banner article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner article .div-search {
+        margin: 2rem 0;
+        width: 100%;
+        height: auto;
+
+        position: inherit;
+    }
+
+    #banner article .div-search h1 {
+        font-weight: bold;
+        font-size: 35px;
+
+        text-align: center;
+    }
+
+    #banner article .div-search .search-banner .select {
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    #banner article .div-search .search-banner .select .input-select {
+        flex: 1;
+    }
+    
+    #banner article .div-search .search-banner .select .input-select p {
+        color: var(--text-body);
+        font-size: var(--body-font-size);
+    }
+
+    #banner article .div-search .search-banner .select .btn-select {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #banner article .div-search .search-banner .select .btn-select button {
+        width: 100%;
+    }
+
+    select {
+        margin: 1rem;
+    }
+
+    /* ==== PILIH RUANG KERJA ==== */
+
+    #pilih-ruang-kerja article .title {
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    #pilih-ruang-kerja article .title .title-pilih, #pilih-ruang-kerja article .title .desc-pilih {
+        display: flex;
+
+        margin: 1rem 0;
+    }
+
+    #pilih-ruang-kerja article .title .title-pilih h1 {
+        width: 100%;
+    }
+
+    #pilih-ruang-kerja article .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pilih-ruang-kerja article .content img {
+        max-width: 100%;
+        max-height: auto;
+        padding: 0;
+
+        margin: 2rem 0;
+    }
+
+    /* ==== WHY RUANG KERJA ==== */
+
+    #why-ruang-kerja .content {
+        display: flex;
+        flex-direction: column;
+
+        padding: 2rem 0;
+    }
+
+    #why-ruang-kerja .content article {
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    #why-ruang-kerja .content article h1 {
+        font-size: var(--title-font-size);
+        color: var(--text-heading);
+    }
+
+    #why-ruang-kerja .content article p.desc-why {
+        font-size: var(--body-font-size);
+        color: var(--text-body);
+        line-height: 2rem;
+
+        max-width: 100%;
+        padding: 1rem 0;
+    }
+
+    #why-ruang-kerja .content aside {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    
+        margin: 2rem 0;
+    }
+    
+    #why-ruang-kerja .content aside div {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
+        margin: 1rem 0;
+    }
+    
+    #why-ruang-kerja .content aside div img {
+        width: 60px;
+        height: auto;
+
+        margin: 0 auto;
+    }
+    
+    #why-ruang-kerja .content aside div div {
+        display: block;
+        width: 100%;
+
+        margin: 1rem 0;
+    }
+    
+    #why-ruang-kerja .content aside div div h1 {
+        font-size: var(--title-why-font-size);
+        color: var(--text-heading);
+
+        text-align: center;
+    }
+    
+    #why-ruang-kerja .content aside div div p {
+        font-size: var(--body-font-size);
+        color: var(--text-body);
+
+        text-align: center;
+        width: 100%;
+
+        padding: 1.5rem;
+        line-height: 20px;
+    }
+
+    /* ==== SEKITARMU RUANG KERJA ==== */
+
+    #sekitarmu-ruang-kerja article .title {
+        text-align: center;
+    }
+
+    #sekitarmu-ruang-kerja article .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sekitarmu-ruang-kerja article .content .ruang-kerja {
+        margin: 0 auto;
+    }
+
+    /* ==== TESTI RUANG KERJA ==== */
+
+    #testi-ruang-kerja .content {
+        display: flex;
+        flex-direction: column;
+    
+        padding: 4rem 0;
+    }
+
+    #testi-ruang-kerja .content article img {
+        margin: 0 auto;
+    }
+
+    #testi-ruang-kerja .content article h1 {
+        text-align: center;
+    }
+
+    #testi-ruang-kerja .content aside {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    
+    #testi-ruang-kerja .content aside .title, #testi-ruang-kerja .content aside .testi {
+        text-align: center;
+    
+        margin: 1rem 0;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #testi-ruang-kerja .content aside .title h1 {
+        font-size: var(--title-why-font-size);
+        color: var(--text-heading);
+        font-weight: normal;
+    
+        line-height: 35px;
+    }
+    
+    #testi-ruang-kerja .content aside .title p {
+        font-size: var(--body-font-size);
+        color: var(--text-body);
+    
+        line-height: 20px;
+        margin: 2rem 0;
+    }
+
+    .biodata aside .content .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .biodata aside .content .main-content .content-text {
+        margin: 2rem auto;
+    }
+
+    .biodata aside .content .main-content .content-text .add-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .content {
+        display: flex;
+        flex-direction: column;
+        align-items: inherit;
+
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #pilih-ruang-kerja article .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #pilih-ruang-kerja article .content img {
+        flex: 1 1 auto;
+        max-width: 100%;
+        margin: 5px;
+
+        padding: 0;
+    }
+
+    #sekitarmu-ruang-kerja article .content {
+        display: inline-flex;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+        gap: 2rem;
+    }
+
+
+}
